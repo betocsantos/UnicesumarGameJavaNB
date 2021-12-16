@@ -5,16 +5,15 @@
  */
 package unicesumargamejavanb;
 
-import java.awt.Dimension;    
-import javax.swing.*;
-import static unicesumargamejavanb.UnicesumarGameJavaNB.metodoUnicesumarGameJavaNB;
 /**
  *
  * @author beto_
  */
 class textArea {
-    
-    UnicesumarGameJavaNB unicesumargamejavanb = new UnicesumarGameJavaNB();
-    
+
+    static void setText(StringBuilder tela) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+    }
     
 }

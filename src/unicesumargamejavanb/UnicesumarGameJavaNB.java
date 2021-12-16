@@ -11,6 +11,7 @@ Disciplina: TCC 2
 package unicesumargamejavanb;
 
 import java.util.Scanner;
+import javax.swing.JTextArea;
 
 /**
  *
@@ -24,10 +25,10 @@ public class UnicesumarGameJavaNB {
     public static void main(String[] args) {
         // TODO code application logic here 
         Scanner sc = new Scanner (System.in);
-        /*TelaGame telaGame= new TelaGame();
-        telaGame.setVisible(true);*/
-        //telaGame.setTitle("DESAFIE OS CONHECIMENTOS – GEOGRAFIA E HISTÓRIA");
-    System.out.println("Classe principal");
+        TelaGame telaGame= new TelaGame();
+        telaGame.setVisible(true);
+        telaGame.setTitle("DESAFIE OS CONHECIMENTOS – GEOGRAFIA E HISTÓRIA");
+        System.out.println("Classe principal");
         /*UnicesumarGameJavaNB unicesumargamejavanb = new UnicesumarGameJavaNB();
         UnicesumarGameJavaNB.metodoUnicesumarGameJavaNB();*/
 
@@ -35,7 +36,7 @@ public class UnicesumarGameJavaNB {
                 nomeDesenvolvedora = "Projeto de Roberto Carlos dos Santos, RA 1719521-5 \n Graduando em Engenharia de Software, UNICESUMAR";
         int pontos = 0, vida = 3, opcao = 0;
         double stage = 1.1;
-
+    
         System.out.println(" "+nomeEngine);
         //nomeEngine = sc.nextLine(); 
         System.out.println(" "+nomeDesenvolvedora);
@@ -84,5 +85,9 @@ public class UnicesumarGameJavaNB {
     /*public void setVisible(boolean b) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }*///velho
+
+    void setVisible(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }//public class UnicesumarGameJavaNB

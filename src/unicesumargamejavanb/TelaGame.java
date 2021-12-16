@@ -16,6 +16,10 @@ import static javax.swing.UIManager.get;
  */
 public class TelaGame extends javax.swing.JFrame {
 
+    private static void add(UnicesumarGameJavaNB unicesumargamejavanb) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     /**
      * Creates new form TelaGame
      */
@@ -35,6 +39,7 @@ public class TelaGame extends javax.swing.JFrame {
         botaoIniciar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         painelPrincipal = new javax.swing.JEditorPane();
+        jDesktopPane1 = new javax.swing.JDesktopPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,13 +56,24 @@ public class TelaGame extends javax.swing.JFrame {
             }
         });
         painelPrincipal.addInputMethodListener(new java.awt.event.InputMethodListener() {
-            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
-            }
             public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
                 painelPrincipalInputMethodTextChanged(evt);
             }
+            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
+            }
         });
         jScrollPane1.setViewportView(painelPrincipal);
+
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -67,17 +83,21 @@ public class TelaGame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 439, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(172, 172, 172)
                         .addComponent(botaoIniciar)))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(336, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
                 .addComponent(botaoIniciar)
                 .addGap(69, 69, 69))
@@ -89,7 +109,10 @@ public class TelaGame extends javax.swing.JFrame {
     private void botaoIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoIniciarActionPerformed
         // TODO add your handling code here:
         UnicesumarGameJavaNB unicesumargamejavanb = new UnicesumarGameJavaNB();
-        painelPrincipal.getClass();
+        /*TelaGame.add(unicesumargamejavanb);
+        unicesumargamejavanb.setVisible(true);*/
+        //painelPrincipal.getClass();
+        //jDesktopPane1.getClass();
         
     }//GEN-LAST:event_botaoIniciarActionPerformed
 
@@ -100,8 +123,11 @@ public class TelaGame extends javax.swing.JFrame {
 
     private void painelPrincipalInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_painelPrincipalInputMethodTextChanged
         // TODO add your handling code here:
-        UnicesumarGameJavaNB.metodoUnicesumarGameJavaNB();
-        painelPrincipal.setVisible(true);
+        /*UnicesumarGameJavaNB.metodoUnicesumarGameJavaNB();
+        painelPrincipal.setVisible(true);*/
+        UnicesumarGameJavaNB unicesumargamejavanb = new UnicesumarGameJavaNB();
+        TelaGame.add(unicesumargamejavanb);
+        unicesumargamejavanb.setVisible(true);
     }//GEN-LAST:event_painelPrincipalInputMethodTextChanged
 
     /**
@@ -145,6 +171,7 @@ public class TelaGame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botaoIniciar;
+    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JEditorPane painelPrincipal;
     // End of variables declaration//GEN-END:variables
